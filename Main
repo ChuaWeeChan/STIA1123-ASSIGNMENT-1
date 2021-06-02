@@ -11,7 +11,7 @@ public class Main {
 		System.out.println("\n============");
 		System.out.println("Advertising");
 		System.out.println("============");
-		Advertising adv = new Advertising();
+		Advertising adv = new Advertising("MINDWORK PSYCHOLOGICAL & COUNSELING CENTER", "MINDWORK.SINCE.2021", 15);
 
 		System.out.println("\n=================");
 		System.out.println("COUNSELLOR LIST");
