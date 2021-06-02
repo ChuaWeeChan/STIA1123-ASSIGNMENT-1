@@ -1,0 +1,46 @@
+
+public class Counsellor {
+	private String counsellorName, counsellorContact, counsellorPosition;
+	private int counsellorID;
+	private double counsellorSalary;
+
+	public void setName(String counsellorName) {
+		this.counsellorName = counsellorName;
+	}
+
+	public void setID(int counsellorID) {
+		this.counsellorID = counsellorID;
+	}
+
+	public void setPosition(String counsellorPosition) {
+		this.counsellorPosition = counsellorPosition;
+	}
+
+	public void setContact(String counsellorContact) {
+		this.counsellorContact = counsellorContact;
+	}
+
+	public void setSalary(double counsellorSalary) {
+		this.counsellorSalary = counsellorSalary;
+	}
+
+	public Counsellor(String name, int ID, String position, String contact, double salary) {
+		counsellorName = name;
+		counsellorID = ID;
+		counsellorPosition = position;
+		counsellorContact = contact;
+		counsellorSalary = salary;
+	}
+
+	public void CounsellorInfo() {
+		System.out.println("Counsellor Name\t\t: "+this.counsellorName);
+		System.out.println("Counsellor ID\t\t: "+this.counsellorID);
+		System.out.println("Counsellor Position\t: "+this.counsellorPosition);
+		System.out.println("Counsellor Contact\t: "+this.counsellorContact);
+		System.out.println("Counsellor Salary\t: RM"+this.counsellorSalary);
+	}
+
+}//End of counsellor
+
+
+
