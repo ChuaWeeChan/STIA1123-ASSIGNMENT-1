@@ -1,0 +1,51 @@
+
+public class Finance {
+	private double counsellingFee, counsellorSalary, rentalFee, grossProfit, operatingProfit;
+
+	public void counsellingFee (double counsellingFee) {
+		this.counsellingFee = counsellingFee;
+	}
+
+	public void counsellorSalary (double counsellorSalary) {
+		this.counsellorSalary = counsellorSalary;
+	}
+
+	public void rentalFee (double rentalFee) {
+		this.rentalFee = rentalFee;
+	}
+
+	public double totalIncome() {
+		double totalIncome = this.counsellingFee;
+		return totalIncome;
+	}
+
+	public double grossProfit() {
+		grossProfit = this.counsellingFee - this.counsellorSalary;
+		return grossProfit;
+	}
+
+	public double operatingProfit() {
+		operatingProfit = grossProfit - this.rentalFee;
+		return operatingProfit;
+	}
+
+	public Finance(double cf, double cs, double rf) {//1.4 constructor with 3 argument
+
+		this.counsellingFee = cf;
+		this.counsellorSalary = cs;
+		this.rentalFee = rf;
+
+		System.out.println("\n\n==================================");
+		System.out.println("Financial Statement of This Month.");
+		System.out.println("==================================");
+		System.out.println("Total Income(Counselling Fees)\t\t: RM" + totalIncome());
+		System.out.println("Total Counsellor Salary\t\t\t: RM" + counsellorSalary);
+		System.out.println("Total Operating Expenses(Rental Fees)\t: RM" + rentalFee);
+		System.out.println("Total Gross Profit\t\t\t: RM" + grossProfit());
+		System.out.println("Total Operating Profit\t\t\t: RM" + operatingProfit());
+	}
+
+
+
+}
+
