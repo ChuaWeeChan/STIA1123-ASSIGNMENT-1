@@ -1,0 +1,35 @@
+
+public class Advertising {
+
+	private int discountVoucher = 15;
+	private String facebook = "MINDWORK PSYCHOLOGICAL & COUNSELING CENTER";
+	private String instagram = "MINDWORK.SINCE.2021";
+
+	public void discountVoucher (int discountVoucher) {
+		this.discountVoucher = discountVoucher;
+	}
+
+	public void facebook (String facebook) {
+		this.facebook = facebook;
+	}
+
+	public void instagram (String instagram) {
+		this.instagram = instagram;
+	}
+
+	public Advertising() {
+
+		System.out.println("\nCAREER COUNSELLING AVAILABLE !!!");
+		System.out.println("DON'T KNOW WHAT THE JOB THAT SUITABLE FOR YOU ???");
+		System.out.println("\nFIND US THROUGH OUR SOCIAL MEDIA !!!");
+		System.out.println("FACEBOOK\t: " + facebook);
+		System.out.println("INSTAGRAM\t: " + instagram);
+		System.out.println("\nFOR THE FIRST 100 CUSTOMERS WILL GET CASH VOUCHER WORTH RM" + discountVoucher + "!!!");
+
+	}
+
+
+
+
+}
+
