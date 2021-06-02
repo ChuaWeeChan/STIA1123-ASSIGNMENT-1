@@ -15,10 +15,10 @@ public class Customer {
 
 			Scanner scan = new Scanner(System.in);
 
-			System.out.println("Enter Customer Name\t\t: ");
+			System.out.println("Enter Customer Name\t: ");
 			customerName[i] = scan.nextLine();
 
-			System.out.println("Enter Customer Contact\t\t: ");
+			System.out.println("Enter Customer Contact\t: ");
 			customerContact[i] = scan.nextLine();
 
 			System.out.println("Enter Customer IC\t: ");
