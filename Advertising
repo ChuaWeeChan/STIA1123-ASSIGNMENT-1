@@ -1,9 +1,9 @@
 
 public class Advertising {
 
-	private int discountVoucher = 15;
-	private String facebook = "MINDWORK PSYCHOLOGICAL & COUNSELING CENTER";
-	private String instagram = "MINDWORK.SINCE.2021";
+	private int discountVoucher;
+	private String facebook;
+	private String instagram;
 
 	public void discountVoucher (int discountVoucher) {
 		this.discountVoucher = discountVoucher;
@@ -17,7 +17,11 @@ public class Advertising {
 		this.instagram = instagram;
 	}
 
-	public Advertising() {
+	public Advertising(String fb, String ig, int dv) {
+
+		this.facebook = fb;
+		this.instagram = ig;
+		this.discountVoucher = dv;
 
 		System.out.println("\nCAREER COUNSELLING AVAILABLE !!!");
 		System.out.println("DON'T KNOW WHAT THE JOB THAT SUITABLE FOR YOU ???");
