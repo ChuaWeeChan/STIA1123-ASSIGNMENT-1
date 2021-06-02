@@ -1,0 +1,38 @@
+
+public class Main {
+	public static void main(String[] args) {
+
+		System.out.println("==============================");
+		System.out.println("Counseling Center Information");
+		System.out.println("==============================");
+		CounselingCenter cc = new CounselingCenter("MINDWORK PSYCHOLOGICAL & COUNSELING CENTER", 
+				"Unit 317 Block A Lobby 5, Lebuhraya SPRINT, Damansara Intan, 47400 Petaling Jaya, Selangor", "016-6351616");
+
+		System.out.println("\n============");
+		System.out.println("Advertising");
+		System.out.println("============");
+		Advertising adv = new Advertising();
+
+		System.out.println("\n=================");
+		System.out.println("COUNSELLOR LIST");
+		System.out.println("=================");
+		Counsellor csl[] = new Counsellor[4]; //create an array to store object.
+		csl[0] = new Counsellor("Welson Chua", 271948, "Senior Counsellor", "016-6351616", 3600);
+		csl[1] = new Counsellor("Jimmy Choo", 271949, "Senior Counsellor", "016-3797605", 3500);
+		csl[2] = new Counsellor("Gary Ng", 271950, "Junior Counsellor", "016-2746819", 1500);
+		csl[3] = new Counsellor("Johnny Xu", 271951, "Junior Counsellor", "016-8981881", 1500);
+		for(int i = 0; i<csl.length; i++) {
+			csl[i].CounsellorInfo();
+			System.out.println("  ");
+		}//end of for loop.
+
+		System.out.println("=================");
+		System.out.println("CUSTOMER RECORD");
+		System.out.println("=================");
+		Customer ctm = new Customer();
+
+		Finance fin = new Finance(15000, 11000, 3500);//cf, cs, rf
+
+
+	}
+}//end of Main.
