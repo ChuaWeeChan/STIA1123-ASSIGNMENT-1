@@ -1,0 +1,31 @@
+
+public class CounselingCenter {
+
+	private String centerName, centerAdd, centerPhoneNo;
+
+	public void centerName (String centerName) {
+		this.centerName = centerName;
+	}
+
+	public void centerAdd (String centerAdd) {
+		this.centerAdd = centerAdd;
+	}
+
+	public void centerPhoneNo (String centerPhoneNo) {
+		this.centerPhoneNo = centerPhoneNo;
+	}
+
+	public CounselingCenter(String cn, String ca, String cp) {////constructor with 3 arguments
+		centerName = cn;
+		centerAdd = ca;
+		centerPhoneNo = cp;
+
+		centerInfo();
+	}
+
+	public void centerInfo() {
+		System.out.println("Center Name\t\t: " + this.centerName);
+		System.out.println("Center Address\t\t: " + this.centerAdd);
+		System.out.println("Center Phone Number\t: " + this.centerPhoneNo);
+	}
+}
