@@ -1,0 +1,62 @@
+import java.util.Scanner; //1.2 pre-defined class
+public class Customer {
+
+	public static String customerName [] = new String [50];
+	public static String customerContact [] = new String [50];
+	public static String customerIC [] = new String [50];
+	public static String customerGender [] = new String [50];
+
+	public Customer() {//1.3 user defined class
+
+		char anotherRecord;
+		int i = 0;
+		do {
+
+
+			Scanner scan = new Scanner(System.in);
+
+			System.out.println("Enter Customer Name\t\t: ");
+			customerName[i] = scan.nextLine();
+
+			System.out.println("Enter Customer Contact\t\t: ");
+			customerContact[i] = scan.nextLine();
+
+			System.out.println("Enter Customer IC\t: ");
+			customerIC[i] = scan.nextLine();
+
+			System.out.println("Enter Customer Gender\t: ");
+			customerGender[i] = scan.nextLine();
+
+			System.out.println("Your data has been recorded!");
+			System.out.println("Do you want to add another record?(Press Y to add):");
+			anotherRecord = scan.next().charAt(0);
+			i++;
+
+		} while (anotherRecord=='Y' || anotherRecord=='y');
+
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Do you want to view your record?(Press Y to view)");
+		anotherRecord = scan.next().charAt(0);
+
+		do {
+			viewInfo();
+			break;
+		}while (anotherRecord=='Y' || anotherRecord=='y');
+
+	}//End of main.
+
+	public static void viewInfo(){ //method to show the customer info
+
+		for (int i=0; i<customerName.length; i++)
+		{
+			if (customerName[i]!=null)
+			{
+				System.out.print("\n\nName\t\t: " + customerName[i]);
+				System.out.print("\nContact number\t: "+customerContact[i]);
+				System.out.print("\nIC number\t: "+customerIC[i]);
+				System.out.print("\nGender\t\t: "+customerGender[i]);
+			}
+		}
+	}
+
+}
